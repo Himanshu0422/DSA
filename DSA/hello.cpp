@@ -10,5 +10,6 @@ int main(){
     int sum = a+b;
     cout<<"sum"<<endl;
     cout<<sum<<endl;
+    cout<<a<<b;
     return 0;
 }
