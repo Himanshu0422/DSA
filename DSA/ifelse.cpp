@@ -27,7 +27,7 @@ int main(){
     /* Odd Even */
     int n;
     cin>>n;
-    if(n%2 == 0){ 5
+    if(n%2 == 0){ 
         cout<<"even"<<endl;
     }else{
         cout<<"odd"<<endl;
