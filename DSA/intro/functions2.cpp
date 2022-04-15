@@ -2,7 +2,7 @@
 
 using namespace std;
 
-bool check(int x, int y, int z)
+/*bool check(int x, int y, int z)
 {
     int a = max(x, max(y, z));
     int b, c;
@@ -26,11 +26,25 @@ bool check(int x, int y, int z)
     {
         return false;
     }
+}*/
+
+int binaryToDecimal(int n)
+{
+    int ans = 0;
+    int x = 1;
+    while (n > 0)
+    {
+        int y = n % 10;
+        ans += x * y;
+        x *= 2;
+        n /= 10;
+    }
+    return ans;
 }
 
 int main()
 {
-    int x, y, z;
+    /*int x, y, z;
     cin >> x >> y >> z;
     if (check(x, y, z))
     {
@@ -39,6 +53,10 @@ int main()
     else
     {
         cout << "Not a pythagorean triplet";
-    }
+    }*/
+
+    int n;
+    cin >> n;
+    cout << binaryToDecimal(n) << endl;
     return 0;
 }
