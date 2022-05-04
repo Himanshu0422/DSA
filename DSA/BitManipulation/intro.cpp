@@ -28,7 +28,7 @@ int updateBit(int n, int pos, int value)
 int main()
 {
     cout << getBit(45, 1) << endl;
-    cout << setBit(5, 2) << endl;
+    cout << setBit(5, 1) << endl;
     cout << clearBit(5, 0) << endl;
     cout << updateBit(5, 1, 1) << endl;
     return 0;
