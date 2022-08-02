@@ -23,16 +23,26 @@ int main()
     //     cout << "Not Equal" << endl;
     // }
 
-    Fraction f1(10, 2);
-    Fraction f2(15, 4);
+    Fraction f1(10, 3);
+    Fraction f2(5, 2);
 
-    f1.print();
-    // ++f1;
     // f1.print();
+    // // ++f1;
+    // // f1.print();
 
-    Fraction f3 = ++f1;
+    // Fraction f3 = ++(++f1);
+    // f1.print();
+    // f3.print();
+
+    // Fraction f3 = f1++;
+    // f1.print();
+    // f3.print();
+
+    // f1 += f2;
+    (f1 += f2) += f2;
+
     f1.print();
-    f3.print();
+    f2.print();
 
     return 0;
 }

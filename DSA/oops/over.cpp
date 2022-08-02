@@ -90,9 +90,35 @@ public:
         simplify();
     }
 
-    Fraction operator++()
+    // pre-increment
+    Fraction &operator++()
     {
         numerator = numerator + denominator;
+        simplify();
+
+        return *this;
+    }
+
+    // post-increment
+    Fraction operator++(int)
+    {
+        Fraction fNew(numerator, denominator);
+        simplify();
+        fNew.simplify();
+        return fNew;
+    }
+
+    Fraction &operator+=(Fraction const &f2)
+    {
+        int lcm = denominator * f2.denominator;
+        int x = lcm / denominator;
+        int y = lcm / f2.denominator;
+
+        int ans = x * numerator + (y * f2.numerator);
+
+        numerator = ans;
+        denominator = lcm;
+
         simplify();
 
         return *this;

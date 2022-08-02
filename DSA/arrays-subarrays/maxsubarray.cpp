@@ -50,11 +50,11 @@ int kadane(int arr[], int n)
     for (int i = 0; i < n; i++)
     {
         currentSum += arr[i];
+        maxSum = max(maxSum, currentSum);
         if (currentSum < 0)
         {
             currentSum = 0;
         }
-        maxSum = max(maxSum, currentSum);
     }
     return maxSum;
 }

@@ -1,0 +1,88 @@
+/* body{
+    margin: 0 5px;
+} */
+
+.heading{
+    color: tomato;
+    text-align: center;
+    font-size: 50px;   
+}
+
+#para{
+    color: green;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+@keyframes example{
+    0%{background-color: #0f0;}
+    50%{background-color: aqua; left: 200px;}
+    100%{background-color: black;}
+}
+
+a[href^="https"]{
+    color: red;
+}
+
+input{
+    margin: 15px;
+    padding: 5px;
+}
+
+input[type="text"]{
+    background-color: aqua;
+}
+
+input[type="password"]{
+    background-color: yellow;
+}
+
+input[type="number"]{
+    background-color: wheat;
+}
+
+div article p{
+    color: pink;
+}
+
+h2 ~ p{
+    color: violet;
+}
+
+.hover:hover{
+    color: #0f0;
+}
+
+.qwer{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.qwer p{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+li:nth-child(1){
+    color: #0f0;
+}
+
+/* #para1{
+    background-color: rgb(53, 164, 127);
+} */
+
+.para2{
+    background-color: rgb(28,28,28);
+}

@@ -1,0 +1,22 @@
+.outer {
+    border: 1px solid black;
+    height: 500px;
+    width: 1000px;
+}
+
+.inner {
+    height: 70px;
+    width: 70px;
+    background-color: red;
+    display: block;
+
+    margin: 20px;
+}
+
+.outer:hover .inner {
+    margin-left: 700px;
+    transition-duration: 2s;
+    background-color: green;
+    border-radius: 50px;
+    box-shadow: inset;
+}

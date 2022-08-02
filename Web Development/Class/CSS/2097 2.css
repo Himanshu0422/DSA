@@ -1,0 +1,25 @@
+div img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+
+    animation-name: any;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes any {
+
+    100%{
+        transform: translateY(80vh);
+    }
+}

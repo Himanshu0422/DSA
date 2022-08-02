@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    /*string str = "adjwurjsdfwsf";
+    string str = "adjwurjsdfwsf";
 
     // covert to upper case
 
@@ -16,19 +16,19 @@ int main()
         }
     }
 
-    cout << str << endl;*/
+    cout << str << endl;
 
-    /*string s = "dtfgvdfcgvsed";
+    string s = "dtfgvdfcgvsed";
 
     transform(s.begin(), s.end(), s.begin(), ::toupper);
-    cout << s << endl;*/
+    cout << s << endl;
 
     // form the biggest number from the numeric string
-    /*string s = "548545455";
+    string s = "548545455";
 
     sort(s.begin(), s.end(), greater<int>());
 
-    cout << s << endl;*/
+    cout << s << endl;
 
     // find max appearing letter
 
