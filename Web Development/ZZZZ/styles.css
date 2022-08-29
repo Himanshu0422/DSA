@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 45px;
+    background-color: #000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0 100px;
+}
+
+ul li {
+    display: inline;
+    list-style-type: none;
+    color: white;
+    font-size: 20px;
+    margin: 0 35px 0 35px;
+}
+
+a,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #F0A12B;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 35px;
+}
+
+.pro {
+    color: #ffffff;
+    display: flex;
+    margin-top: 120px;
+    margin: 0 10px;
+    min-height: auto;
+}
+
+.hero {
+    display: block;
+    width: 50%;
+}
+
+.hero img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 50%;
+}
+
+.hero h1{
+    font-size: 70px;
+}
+
+#coding{
+    color: #f4cb15;
+    line-height: 150px;
+}
+
+.bb{
+   margin-top: 50px; 
+}
+
+.icons{
+    margin-top: 200px;
+    color: #F0A12B;
+    font-size: 50px;
+}
+
+.icons i{
+    padding: 20px;
+}
+
+.next_div{
+    margin: 20px 50px;
+}
+
+.hero2{
+    margin-top: 100px;
+    display: inline-block;
+    width: 50%;
+    color: #ffffff;
+    height: 800px;
+    /* border: 1px solid white; */
+}
+
+.hero2 h1{
+    font-size: 70px;
+}
+
+.box{
+    height: 250px;
+    width: 200px;
+    /* border: 1px solid white; */
+    border-radius: 3%;
+    display: block;
+    background-color: #ffffff;
+}
+
+.container{
+    position: relative;
+}
+
+.box1{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    text-align: center;
+}
+
+.box2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+}
+
+.button_div{
+    display: flex;
+    margin-top: 20px; 
+    text-align: center;
+}
+
+.new1{
+    display: block;
+    height: 250px;
+    width: 200px;
+    /* border: 1px solid white; */
+    border-radius: 3%;
+    display: block;
+    text-align: center;
+    margin-left: 15px;
+    background-color: #ffffff;
+}
+
+.button_div .btn1{
+    margin-top: 100px;
+}
+
+.grid{
+    margin-top: 20px;
+}
+
+.info{
+    color: #ffffff;
+    display: flex;
+    margin-top: 200px;
+    text-align: center;
+    justify-content: center;
+}
+
+.info-div{
+    display: inline-block;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.info-circle{
+    background-color: #ffffff;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    color: #F0A12B;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-div div:last-child{
+    color: #F0A12B;
+    font-size: 20px;
+}
+
+#info-color{
+    color: #ffffff;
+}
+
+.btn1 {
+    background: #f4cb15;
+    background-image: -webkit-linear-gradient(top, #f4cb15, #F0A12B);
+    background-image: -moz-linear-gradient(top, #f4cb15, #F0A12B);
+    background-image: -ms-linear-gradient(top, #f4cb15, #F0A12B);
+    background-image: -o-linear-gradient(top, #f4cb15, #F0A12B);
+    background-image: linear-gradient(to bottom, #f4cb15, #F0A12B);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    -webkit-box-shadow: 1px 6px 14px #F4cb15;
+    -moz-box-shadow: 1px 6px 14px #F4cb15;
+    box-shadow: 1px 6px 14px #F4cb15;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: 0;
+}
+
+.btn1:hover {
+    background: #ffffff;
+    text-decoration: none;
+    border: 0;
+    color: #F4CB15;
+}
+
+.btn2 {
+    -webkit-border-radius: 9;
+    -moz-border-radius: 9;
+    border-radius: 9px;
+    font-family: Arial;
+    color: #0026ff;
+    font-size: 20px;
+    background: #ffffff;
+    padding: 11px 18px 11px 18px;
+    text-decoration: none;
+  }
+
+@media screen and (max-width: 1170px) {
+    ul li {
+        display: inline;
+        list-style-type: none;
+        color: white;
+        font-size: 20px;
+        margin: 0 10px 0 10px;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    #nav_list {
+        display: none;
+    }
+}

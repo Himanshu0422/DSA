@@ -24,15 +24,15 @@ int main()
     cout << s << endl;
 
     // form the biggest number from the numeric string
-    string s = "548545455";
+    string s1 = "548545455";
 
-    sort(s.begin(), s.end(), greater<int>());
+    sort(s1.begin(), s1.end(), greater<int>());
 
-    cout << s << endl;
+    cout << s1 << endl;
 
     // find max appearing letter
 
-    string s = "dfgvsrdhgvdsfbsrd";
+    string s2 = "dfgvsrdhgvdsfbsrd";
 
     int freq[26];
     for (int i = 0; i < 26; i++)
@@ -40,9 +40,9 @@ int main()
         freq[i] = 0;
     }
 
-    for (int i = 0; i < s.size(); i++)
+    for (int i = 0; i < s2.size(); i++)
     {
-        freq[s[i] - 'a']++;
+        freq[s2[i] - 'a']++;
     }
 
     char ans = 'a';

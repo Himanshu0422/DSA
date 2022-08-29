@@ -5,7 +5,7 @@ using namespace std;
 string reverse_words(string s[])
 {
     int st = 0;
-    int e = s.length();
+    int e = s.length()-1;
 
     while (st <= e)
     {
@@ -13,6 +13,7 @@ string reverse_words(string s[])
         st++;
         e--;
     }
+    return s;
 }
 
 int main()
