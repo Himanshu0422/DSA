@@ -1,11 +1,10 @@
-var arr=  [1,2,3,4,"hello","xyz","rohan"];
+const div = document.getElementById("parent");
 
-var newarr = [];
+const h1 = document.createElement("h1");
+div.appendChild(h1);
 
-arr.forEach((ele)=>{
-    if(typeof(ele)=='string'){
-        newarr.push(ele);
-    }
-})
-
-console.log(newarr)
+function temp(){
+    // const bod = document.querySelectorAll("body")
+    // bod.style.backgroundColor = "red"
+    h1.innerText += "Himanshu GOD"
+}

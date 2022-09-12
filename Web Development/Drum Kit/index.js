@@ -10,15 +10,21 @@ for (var i = 0; i < numberofDrum; i++) {
 }
 
 
-document.addEventListener("keypress", function(event){
+document.addEventListener("keypress", function (event) {
     makeSound(event.key);
     buttonAnimation(event.key);
 });
 
-function makeSound(key){
+function makeSound(key) {
     switch (key) {
         case "w":
             var tom1 = new Audio('sounds/tom-1.mp3');
+            var myAudio = document.querySelector('drum');
+            var source = tom1.createMediaElementSource(myAudio);
+            var panNode = tom1.createStereoPanner();
+            panNode.pan.value = -1;
+            source.connect(panNode);
+            panNode.connect(tom1.destination);
             tom1.play();
             break;
 
@@ -56,11 +62,11 @@ function makeSound(key){
     }
 }
 
-function buttonAnimation(currentKey){
+function buttonAnimation(currentKey) {
     var activeButton = document.querySelector("." + currentKey);
     activeButton.classList.add("pressed");
 
-    setTimeout(function(){
+    setTimeout(function () {
         activeButton.classList.remove("pressed");
-    },100);
+    }, 100);
 }
