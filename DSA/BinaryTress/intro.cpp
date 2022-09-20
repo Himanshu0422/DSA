@@ -19,7 +19,7 @@ public:
 node *buildtree(node *root)
 {
 
-    // cout << "Enter the data: " << endl;
+    cout << "Enter the data: " << endl;
     int data;
     cin >> data;
     root = new node(data);
@@ -29,9 +29,9 @@ node *buildtree(node *root)
         return NULL;
     }
 
-    // cout << "Enter data for inserting in left of  " << data << endl;
+    cout << "Enter data for inserting in left of  " << data << endl;
     root->left = buildtree(root->left);
-    // cout << "Enter data for inserting in right of " << data << endl;
+    cout << "Enter data for inserting in right of " << data << endl;
     root->right = buildtree(root->right);
 
     return root;
@@ -147,15 +147,15 @@ void buildtreefromlevel(node *&root)
 int main()
 {
     node *root = NULL;
-    buildtreefromlevel(root);
-    levelOrderTraversal(root);
+    // buildtreefromlevel(root);
+    // levelOrderTraversal(root);
     // 1 3 5 7 11 17 -1 -1 -1 -1 -1 -1 -1
 
-    // root = buildtree(root);
+    root = buildtree(root);
 
     // // 1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1
-    // cout << "Printing level order traversal " << endl;
-    // levelOrderTraversal(root);
+    cout << "Printing level order traversal " << endl;
+    levelOrderTraversal(root);
 
     // cout << "Inorder " << endl;
     // inorder(root);
