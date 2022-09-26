@@ -1,0 +1,16 @@
+h1{
+    text-align:center;
+}
+
+#main-div{
+    position:relative;
+}
+
+.ball{
+    position:absolute;
+    border:2px solid black;
+    border-radius:50%;
+    height:75px;
+    width:75px;
+    background-color:aqua;
+}
