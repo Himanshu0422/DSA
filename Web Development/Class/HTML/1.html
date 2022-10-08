@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input {
+            margin: 10px;
+        }
+
+        form {
+            padding: 10px;
+        }
+
+        button {
+            box-shadow: 2px 2px 2px grey;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="index.html" method="get">
+
+        <fieldset>
+            <legend>Information</legend>
+            <label>Name:</label>
+            <input type="text" name="name" required>
+            <br>
+            <label>Mobile:</lable>
+                <input type="number" name="phone">
+                <br>
+                <label>Password:</label>
+                <input type="password" name="password">
+                <br>
+                <input type="radio" id="male" value="male" name="gender">
+                <label for="male">Male</label>
+                <br>
+                <input type="radio" id="female" value="female" name="gender">
+                <label for="female">Female</label>
+                <br>
+                <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
