@@ -108,7 +108,7 @@ int findNode(Node *head, int key)
 Node *insertNode(Node *head, int i, int data)
 {
     Node *newNode = new Node(data);
-    int count = 0;
+    int count = 1;
     Node *temp = head;
 
     while (temp != NULL && count < i - 1)
@@ -426,11 +426,14 @@ int main()
     Node *head = takeInput();
     print(head);
 
-    cout << getCount(head) << endl;
+    int n = getCount(head);
+    if(n % 2 != 0){
+        n++;
+    }
 
-    rmerge(head);
+    // rmerge(head);
 
-    print(head);
+    // print(head);
 
     // cout << palindrome(head) << endl;
 
@@ -449,9 +452,9 @@ int main()
 
     // find(head, 5);
 
-    // insertNode(head, 3, 99);
+    insertNode(head, n/2, 99);
 
-    // print(head);
+    print(head);
 
     // head = deleteNode(head, 0);
     // print(head);
