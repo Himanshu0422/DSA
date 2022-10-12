@@ -45,17 +45,86 @@
 // 	document.getElementById('root')
 // )
 
-import React from "react";
-import ReactDom from "react-dom";
+// import React from "react";
+// import ReactDom from "react-dom";
 
-const d = new Date().toLocaleDateString();
-const t = new Date().toLocaleTimeString();
-const name = "Himanshu";
-ReactDom.render(
+// const d = new Date().toLocaleDateString();
+// const t = new Date().toLocaleTimeString();
+// const name = "Himanshu";
+// ReactDom.render(
+// 	<React.Fragment>
+// 		<h1>{`My name is ${name}.`}</h1>
+// 		<p>{`Today's Date is ${d}`}</p>
+// 		<p>{`Time: ${t}`}</p>
+// 	</React.Fragment>,
+// 	document.getElementById('root')
+// )
+
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import './index.css';
+
+// const name1 = "Himanshu"
+// const img1 = 'https://picsum.photos/200/300';
+
+// ReactDOM.render(
+// 	<React.Fragment>
+// 		<h1 className="heading" contentEditable="true">My name is {name1}.</h1>
+// 		<div className="im">
+// 			<img src={img1} alt='random images' />
+// 		</div>
+// 	</React.Fragment>,
+// 	document.getElementById('root')
+// )
+
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+
+// const name1 = "Himanshu"
+// const img1 = 'https://picsum.photos/200/300';
+// const heading = {
+// 	color: 'red',
+// 	textAlign: 'center',
+// 	fontFamily: '"Silkscreen", cursive',
+// 	fontWeight: 'bold',
+// 	textShadow: '0px 2px 4px green'
+// }
+
+// ReactDOM.render(
+// 	<React.Fragment>
+// 		<h1 style={heading} contentEditable="true">My name is {name1}.</h1>
+// 		<div style={{display: 'flex', justifyContent: 'center'}}>
+// 			<img src={img1} alt='random images' />
+// 		</div>
+// 	</React.Fragment>,
+// 	document.getElementById('root')
+// )
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+
+const curr = new Date(2022, 10, 11, 5);
+const currH = curr.getHours();
+let val = '';
+const hlod = {};
+
+if(currH >= 1 && currH < 12){
+	val = 'Good Morning';
+	hlod.color = 'red';
+}else if(currH >=12 && currH < 19){
+	val = 'Good Afternoon';
+	hlod.color = 'orange';
+}else{
+	val = 'Good Night';
+	hlod.color = 'green';
+}
+
+ReactDOM.render(
 	<React.Fragment>
-		<h1>{`My name is ${name}.`}</h1>
-		<p>{`Today's Date is ${d}`}</p>
-		<p>{`Time: ${t}`}</p>
+		<div className='divn'>
+			<h1>Hello, <span style={hlod}>{val}</span></h1>
+		</div>
 	</React.Fragment>,
 	document.getElementById('root')
 )
