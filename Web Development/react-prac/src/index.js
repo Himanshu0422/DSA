@@ -100,31 +100,44 @@
 // 	document.getElementById('root')
 // )
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import './index.css';
 
-const curr = new Date(2022, 10, 11, 5);
-const currH = curr.getHours();
-let val = '';
-const hlod = {};
+// const curr = new Date(2022, 10, 11, 5);
+// const currH = curr.getHours();
+// let val = '';
+// const hlod = {};
 
-if(currH >= 1 && currH < 12){
-	val = 'Good Morning';
-	hlod.color = 'red';
-}else if(currH >=12 && currH < 19){
-	val = 'Good Afternoon';
-	hlod.color = 'orange';
-}else{
-	val = 'Good Night';
-	hlod.color = 'green';
-}
+// if(currH >= 1 && currH < 12){
+// 	val = 'Good Morning';
+// 	hlod.color = 'red';
+// }else if(currH >=12 && currH < 19){
+// 	val = 'Good Afternoon';
+// 	hlod.color = 'orange';
+// }else{
+// 	val = 'Good Night';
+// 	hlod.color = 'green';
+// }
+
+// ReactDOM.render(
+// 	<React.Fragment>
+// 		<div className='divn'>
+// 			<h1>Hello, <span style={hlod}>{val}</span></h1>
+// 		</div>
+// 	</React.Fragment>,
+// 	document.getElementById('root')
+// )
+// <h1>Hi, My name is Himanshu</h1>
+// <p>My Anime List</p>
+
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
 
 ReactDOM.render(
 	<React.Fragment>
-		<div className='divn'>
-			<h1>Hello, <span style={hlod}>{val}</span></h1>
-		</div>
+		<App />
 	</React.Fragment>,
 	document.getElementById('root')
 )
