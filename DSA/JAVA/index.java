@@ -103,8 +103,17 @@
 
 import java.util.*;
 
-public class index{
-    public static void main(String[] args) {
-        System.out.println("Hello World");
+// public class index{
+//     public static void main(String[] args) {
+//         System.out.println("Hello World");
+//     }
+// }
+
+public class index {
+    int empId;
+    int age;
+
+    public static void main(String args[]){
+        index obj = new index();
     }
 }
