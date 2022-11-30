@@ -84,9 +84,9 @@ int main()
         remove(head);
         bool p = detect(head);
         if(p){
-            cout << "Found";
+            cout << "Cycle Found";
         }else{
-            cout << "Done";
+            cout << "Removed Cycle";
         }
     }else{
         cout << "Not Found";
