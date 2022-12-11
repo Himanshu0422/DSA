@@ -6,6 +6,7 @@
         "list": "cpp",
         "vector": "cpp",
         "string_view": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "new": "cpp"
     }
 }
