@@ -1,5 +1,5 @@
 import java.util.*;
-public class Main {
+public class adddupinbst {
 	private class Node {
 		int data;
 		Node left;
@@ -15,7 +15,7 @@ public class Main {
 	private Node root;
 	private int size;
 
-	public Main() {
+	public adddupinbst() {
 		this.root = null;
 		this.size = 0;
 	}
@@ -127,7 +127,7 @@ public class Main {
 	    }
 	    
 	    public static void main (String[] args) {
-	        Main bst=new Main();
+	        adddupinbst bst=new adddupinbst();
             Scanner s=new Scanner(System.in);
 	        int n=s.nextInt();
 	        for(int i=0;i<n;i++){
